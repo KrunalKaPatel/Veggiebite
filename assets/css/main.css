@@ -1,0 +1,214 @@
+/* font-face start
+----------------------------*/
+@font-face {
+  font-family: 'Lucida Bright Regular';
+  src: url("../fonts/Lucida Bright Regular.eot") format("eot"), url("../fonts/Lucida Bright Regular.svg") format("svg"), url("../fonts/Lucida Bright Regular.ttf") format("ttf"), url("../fonts/Lucida Bright Regular.woff") format("woff"), url("../fonts/Lucida Bright Regular.woff2") format("woff2");
+  font-weight: 400; }
+
+/* reset css start
+----------------------------*/
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #233e56; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+figure {
+  padding: 0;
+  margin: 0; }
+
+img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%; }
+
+ul, li {
+  text-decoration: none;
+  display: inline;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  display: inline-block; }
+
+a:hover {
+  text-decoration: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+/* default SCSS start
+----------------------------*/
+/* default css start
+----------------------------*/
+body {
+  padding: 75px;
+  position: relative; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-list {
+  overflow: visible; }
+
+section#pageWrapper {
+  position: relative; }
+
+.container {
+  width: 100%;
+  max-width: 1680px; }
+
+/* Header Section
+----------------------------*/
+.pageheader {
+  position: absolute;
+  z-index: 10;
+  background-color: #112434;
+  width: 15.3%;
+  height: 100%; }
+  .pageheader .logo {
+    position: absolute;
+    top: 5%;
+    left: 23%; }
+  .pageheader .social-links {
+    position: absolute;
+    bottom: 3.7%;
+    left: 32%;
+    transform: translate(-50%, 0%); }
+    .pageheader .social-links .link-border {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin: 20px 0px;
+      cursor: pointer; }
+      .pageheader .social-links .link-border i {
+        color: #fff;
+        font-size: 24px; }
+    .pageheader .social-links .link-border:hover {
+      border: 1px solid #ffd200; }
+    .pageheader .social-links .link-border:hover i {
+      color: #ffd200; }
+
+/* Banner Section
+----------------------------*/
+.banner-image {
+  position: relative; }
+  .banner-image figure img {
+    display: flex; }
+
+.banner-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 1px;
+  background-color: #fccf00;
+  width: 33.3%;
+  height: 89%;
+  z-index: 11; }
+
+.menu {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  z-index: 21; }
+  .menu ul li {
+    padding: 0px 27px; }
+    .menu ul li a figure img {
+      width: 100%;
+      max-width: 100%; }
+  .menu ul li:last-child {
+    padding-left: 30px; }
+
+/*
+.slider-section
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 15;
+	width: 100%;
+}
+.item{
+	display: flex !important;
+}
+.display-50{
+	display: flex;
+	flex: 0 0 50%;
+}
+.banner-title{
+	display: flex;
+	flex-direction: column;
+}
+*/
+.banner-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  width: 80%;
+  max-width: 100%; }
+  .banner-section .item {
+    display: flex !important; }
+  .banner-section .banner-title {
+    width: 100%;
+    max-width: 50%;
+    color: #fff; }
+    .banner-section .banner-title h1 {
+      font-family: Lucida Bright Regular;
+      font-size: 110px;
+      font-weight: 400;
+      -webkit-text-decoration: underline #ffd200;
+              text-decoration: underline #ffd200; }
+    .banner-section .banner-title p {
+      width: 50%;
+      font-size: 25px; }
+
+.item-main-image {
+  width: 100%;
+  max-width: 50%; }
+
+button.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-7px, -50%);
+  width: 140px;
+  height: 120px;
+  background: url(../images/back.png) no-repeat;
+  text-indent: 200px;
+  background-color: #fccf00;
+  background-position: 20px 45px;
+  overflow: hidden;
+  border: 0;
+  z-index: 10;
+  outline: none; }
+
+button.slick-next.slick-arrow {
+  left: inherit;
+  right: 0;
+  transform: translateX(7px) rotate(180deg); }
+
+.item-second-image {
+  position: absolute;
+  bottom: -10%;
+  left: 0; }
+
+/*# sourceMappingURL=main.css.map */
