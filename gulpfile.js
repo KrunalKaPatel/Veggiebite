@@ -45,10 +45,6 @@ function scssTask(){
     ); // put final CSS in dist folder
 }
 
-/*function fonts() {
-    return src(files.fontPath)
-    .pipe(dest('assets/fonts'));
-};*/
 
 // Cachebust
 function cacheBustTask(){
@@ -59,7 +55,6 @@ function cacheBustTask(){
 }
 
   
-
 // Watch task: watch SCSS files for changes
 // If any change, run scss tasks simultaneously
 function watchTask(){
